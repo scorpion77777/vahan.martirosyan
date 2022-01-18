@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" href="tailwind.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-body text-white font-poppins pb-12">
+
+	<header class="py-6">
+		<div class="container flex justify-between items-center mx-auto px-4 md:px-6 lg:px-26 w-full">
+			<!--
+			<div class="items-center cursor-pointer">
+				<div class="group">
+					<svg xmlns="http://www.w3.org/2000/svg" class="group:hover: animate-bounce w-6 h-6" fill=""
+						viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+							d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+					</svg>
+				</div>
+			</div>
+-->
+
+			<span>vahan.martirosyan</span>
+			<div class="hidden md:flex space-x-12 items-center">
+				<a href="#" class="text-selected-text">Home</a>
+				<a href="#work">My work</a>
+				<a href="#clients">What I Learn?</a>
+				<a href="#contact">
+					<button
+						class="px-6 py-2 font-bold bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Contact
+						me</button></a>
+			</div>
+			<div class="md:hidden">
+				<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+						fill="white" />
+				</svg>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<div class="flex flex-wrap md:flex-nowrap">
+
+			<nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+					<a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-1 py-1 rounded-md ml-8 opacity-0">Home</span>
+					</a>
+					<a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-1 py-1 rounded-md ml-8 opacity-0">Work</span>
+					</a>
+					<a href="#clients" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-1 py-1 rounded-md ml-8 opacity-0">Skills</span>
+					</a>
+					<a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+						<span class="bg-black px-1 py-1 rounded-md ml-8 opacity-0">Contact</span>
+					</a>
+				</div>
+			</nav>
+
+			<div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+				<h1 class="font-bold text-4xl md:text-4xl lg:text-4xl text-center md:text-left">Hi
+
+
+					<br> I'am Vahan
+					student at UCI Continuing Education! <br>I'am Lerning <span style="color: yellow;">full</span>
+					<span style="color: orangered;">stack</span> web development!
+				</h1>
+				<div class="w-full flex justify-center md:justify-start">
+					<button
+						class="px-8 py-4  font-bold mt-12 flex items-center space-x-3 bg-blue-800 hover:bg-blue-600 text-white  rounded full">
+						<div>
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z"
+									fill="white" />
+								<path
+									d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z"
+									fill="white" />
+							</svg>
+						</div>
+						<span>View my work.</span>
+					</button>
+				</div>
+			</div>
+
+
+			<!-- <img src="img/2.jpg" alt="Man" class="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1"> -->
+		</div>
+	</div>
+
+	</div>
+
+
+	<!-- My work -->
+	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h2 id="work" class="secondary-title">My work</h2>
+			<p class="section-paragraph"><span st>I</span>t is a pleasure of learning in This full stack bootcamp,
+				and implementing both frontend and backend.</p>
+
+			<span>E-comerce back_end using Node.js and Express ... </br><a
+					style="color: rgb(83, 83, 255);font-style: italic;"
+					href="https://github.com/scorpion77777/e_commerce">GitHub repository</a></span>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+				<img src="https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
+					class="w-full bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2805&q=80"
+					class="w-full bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+				<img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+					class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
+			</div>
+		</section>
+	</div>
+
+
+
+
+	<!-- Skills -->
+	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h2 id="clients" class="secondary-title">Skills i learned!</h2>
+			<p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing
+				and implementing both frontend and backend.</p>
+
+			<!-- Skills -->
+			<div class="space-y-12 my-16">
+				<div
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+					<!-- Client logo -->
+					<div class="mb-6 lg:mb-0">
+						<svg width="80" height="96" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+							<path fill="#E44D26"
+								d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z" />
+							<path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z" />
+							<path fill="#EBEBEB"
+								d="M64 52.455h-18.212l-1.258-14.094h19.47v-13.762h-34.511l.33 3.692 3.382 37.927h30.799zM64 88.198l-.061.017-15.327-4.14-.979-10.975h-13.817l1.928 21.609 28.193 7.826.063-.017z" />
+							<path fill="#fff"
+								d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z" />
+						</svg>
+					</div>
+
+					<!-- Client info -->
+					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+						<h3 class="text-white text-3xl font-semibold">HTML5</h3>
+
+						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+							<div class="badge">HTML</div>
+							<div class="badge">Frontend development</div>
+						</div>
+
+						<p class="text-secondary">HTML is the standard markup language for Web pages.
+
+							With HTML you can create your own Website. HTML is easy to learn - You will enjoy it!</p>
+					</div>
+
+				</div>
+				<div
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+					<!-- Client logo -->
+					<div class="mb-6 lg:mb-0">
+						<svg width="80" height="96" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+							<path fill="#1572B6"
+								d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+							<path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+							<path fill="#fff"
+								d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z" />
+							<path fill="#EBEBEB"
+								d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+							<path fill="#fff"
+								d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z" />
+							<path fill="#EBEBEB"
+								d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+						</svg>
+					</div>
+
+					<!-- Client info -->
+					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+						<h3 class="text-white text-3xl font-semibold">CSS 3</h3>
+
+						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+							<div class="badge">UI/UX</div>
+							<div class="badge">Frontend development</div>
+						</div>
+
+						<p class="text-secondary">CSS is the language we use to style an HTML document. CSS describes
+							how HTML elements should be displayed.</p>
+					</div>
+
+				</div>
+				<div
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+					<!-- Client logo -->
+					<div class="mb-6 lg:mb-0">
+						<svg width="80" height="96" xmlns="http://www.w3.org/2000/svg" width="78.562" height="110.589"
+							viewBox="0 0 80 112">
+							<path fill="#e6a329" d="M78.562,489.9H0l7.365,79.867,31.912,9.051,31.912-9.051Z"
+								data-name="Path 275" transform="translate(0 -468.229)" />
+							<path fill="#f1bf22" d="M887.9,637v75.643l25.856-7.325L920.046,637Z" data-name="Path 276"
+								transform="translate(-848.623 -608.822)" />
+							<path fill="#fff"
+								d="M434.124,858.5H394.369L391.6,888.4l.057-.186h33.774l-1.1,12.651-10.776,3.1-10.935-3.15-.655-7.657h-9.926l1.416,15.3,20.1,5.706,20.109-5.706,2.769-30.032H400.589l.46-10.006h24.869l.372,5.733H436.3Z"
+								data-name="Path 277" transform="translate(-374.277 -820.524)" />
+							<path fill="#ebebeb"
+								d="M413.563,858.5H394.369L391.6,888.4l.057-.186h21.905v-9.754H401.987l.46-10.006h11.116Zm-11.576,34.663h-9.949l1.416,15.292,20.1,5.7V903.979l-10.935-3.158Z"
+								data-name="Path 278" transform="translate(-374.277 -820.524)" />
+							<path fill="#231f20"
+								d="M564.094,9.891H557.1v5.021h12V0h-5ZM586.371.08H574.179V5.3c1.628,1.628,2.477,2.411,4.875,4.769h-4.875v4.76h12.191V10.077L581.5,5.308h4.875Z"
+								data-name="Path 279" transform="translate(-532.456)" />
+						</svg>
+
+					</div>
+
+					<!-- Client info -->
+					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+						<h3 class="text-white text-3xl font-semibold">JavaScript</h3>
+
+						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+							<div class="badge">Web</div>
+							<div class="badge">Programming</div>
+						</div>
+
+						<p class="text-secondary">JavaScript is the world's most popular programming language.
+							JavaScript is the programming language of the Web.</p>
+					</div>
+
+
+				</div>
+				<div
+					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+					<div class="mb-6 lg:mb-0">
+						<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"
+							viewBox="0 0 512 314">
+							<defs>
+								<linearGradient id="b" x1="68.188%" x2="27.823%" y1="17.487%" y2="89.755%">
+									<stop offset="0%" stop-color="#41873F" />
+									<stop offset="32.88%" stop-color="#418B3D" />
+									<stop offset="63.52%" stop-color="#419637" />
+									<stop offset="93.19%" stop-color="#3FA92D" />
+									<stop offset="100%" stop-color="#3FAE2A" />
+								</linearGradient>
+								<linearGradient id="d" x1="43.277%" x2="159.245%" y1="55.169%" y2="-18.306%">
+									<stop offset="13.76%" stop-color="#41873F" />
+									<stop offset="40.32%" stop-color="#54A044" />
+									<stop offset="71.36%" stop-color="#66B848" />
+									<stop offset="90.81%" stop-color="#6CC04A" />
+								</linearGradient>
+								<linearGradient id="e" x1="-4413.77%" x2="5327.93%" y1="13.43%" y2="13.43%">
+									<stop offset="9.192%" stop-color="#6CC04A" />
+									<stop offset="28.64%" stop-color="#66B848" />
+									<stop offset="59.68%" stop-color="#54A044" />
+									<stop offset="86.24%" stop-color="#41873F" />
+								</linearGradient>
+								<linearGradient id="f" x1="-4.389%" x2="101.499%" y1="49.997%" y2="49.997%">
+									<stop offset="9.192%" stop-color="#6CC04A" />
+									<stop offset="28.64%" stop-color="#66B848" />
+									<stop offset="59.68%" stop-color="#54A044" />
+									<stop offset="86.24%" stop-color="#41873F" />
+								</linearGradient>
+								<linearGradient id="g" x1="-9713.77%" x2="27.93%" y1="36.21%" y2="36.21%">
+									<stop offset="9.192%" stop-color="#6CC04A" />
+									<stop offset="28.64%" stop-color="#66B848" />
+									<stop offset="59.68%" stop-color="#54A044" />
+									<stop offset="86.24%" stop-color="#41873F" />
+								</linearGradient>
+								<linearGradient id="h" x1="-103.861%" x2="100.797%" y1="50.275%" y2="50.275%">
+									<stop offset="9.192%" stop-color="#6CC04A" />
+									<stop offset="28.64%" stop-color="#66B848" />
+									<stop offset="59.68%" stop-color="#54A044" />
+									<stop offset="86.24%" stop-color="#41873F" />
+								</linearGradient>
+								<linearGradient id="i" x1="130.613%" x2="4.393%" y1="-211.069%" y2="201.605%">
+									<stop offset="0%" stop-color="#41873F" />
+									<stop offset="32.88%" stop-color="#418B3D" />
+									<stop offset="63.52%" stop-color="#419637" />
+									<stop offset="93.19%" stop-color="#3FA92D" />
+									<stop offset="100%" stop-color="#3FAE2A" />
+								</linearGradient>
+								<path id="a"
+									d="M57.903 1.85a5.957 5.957 0 0 0-5.894 0L3.352 29.933c-1.85 1.04-2.89 3.005-2.89 5.085v56.286c0 2.08 1.156 4.045 2.89 5.085l48.657 28.085a5.957 5.957 0 0 0 5.894 0l48.658-28.085c1.849-1.04 2.89-3.005 2.89-5.085V35.019c0-2.08-1.157-4.045-2.89-5.085L57.903 1.85z" />
+							</defs>
+							<g fill="none">
+								<path fill="#539E43"
+									d="M253.11 313.094c-1.733 0-3.351-.462-4.854-1.271l-15.371-9.13c-2.312-1.272-1.156-1.734-.462-1.965 3.12-1.04 3.698-1.272 6.934-3.12.347-.232.81-.116 1.156.115l11.789 7.05c.462.231 1.04.231 1.386 0l46.115-26.698c.462-.231.694-.694.694-1.271v-53.28c0-.579-.232-1.04-.694-1.272l-46.115-26.582c-.462-.232-1.04-.232-1.386 0l-46.115 26.582c-.462.231-.694.809-.694 1.271v53.28c0 .463.232 1.04.694 1.272l12.598 7.281c6.819 3.467 11.095-.578 11.095-4.623v-52.587c0-.693.578-1.387 1.387-1.387h5.894c.694 0 1.387.578 1.387 1.387v52.587c0 9.13-4.97 14.447-13.638 14.447-2.658 0-4.738 0-10.633-2.89l-12.135-6.934c-3.005-1.733-4.854-4.97-4.854-8.437v-53.28c0-3.467 1.849-6.704 4.854-8.437l46.114-26.698c2.89-1.618 6.82-1.618 9.709 0l46.114 26.698c3.005 1.733 4.855 4.97 4.855 8.437v53.28c0 3.467-1.85 6.704-4.855 8.437l-46.114 26.698c-1.503.694-3.236 1.04-4.854 1.04zm14.216-36.637c-20.225 0-24.386-9.246-24.386-17.105 0-.694.578-1.387 1.387-1.387h6.01c.693 0 1.271.462 1.271 1.156.925 6.125 3.583 9.13 15.834 9.13 9.708 0 13.87-2.196 13.87-7.397 0-3.005-1.157-5.2-16.297-6.703-12.598-1.272-20.457-4.045-20.457-14.1 0-9.362 7.86-14.91 21.035-14.91 14.793 0 22.075 5.086 23 16.18 0 .348-.116.694-.347 1.041-.232.231-.578.462-.925.462h-6.01c-.578 0-1.156-.462-1.271-1.04-1.387-6.356-4.97-8.437-14.447-8.437-10.633 0-11.905 3.699-11.905 6.472 0 3.352 1.503 4.392 15.834 6.241 14.216 1.85 20.92 4.508 20.92 14.447-.116 10.171-8.437 15.95-23.116 15.95z" />
+								<path fill="#333"
+									d="M110.028 104.712c0-2.08-1.156-4.046-3.005-5.086l-49.004-28.2c-.81-.463-1.734-.694-2.658-.81h-.463c-.924 0-1.849.347-2.658.81l-49.004 28.2c-1.85 1.04-3.005 3.005-3.005 5.086l.116 75.817c0 1.04.578 2.08 1.502 2.543.925.578 2.08.578 2.89 0l29.125-16.643c1.849-1.04 3.005-3.005 3.005-5.085v-35.482c0-2.08 1.155-4.045 3.005-5.085l12.366-7.166c.925-.578 1.965-.81 3.005-.81 1.04 0 2.08.232 2.89.81l12.366 7.166c1.85 1.04 3.005 3.004 3.005 5.085v35.482c0 2.08 1.156 4.045 3.005 5.085l29.125 16.643c.925.578 2.08.578 3.005 0 .925-.463 1.503-1.503 1.503-2.543l-.116-75.817zM345.571.347c-.924-.463-2.08-.463-2.89 0-.924.578-1.502 1.502-1.502 2.542v75.125c0 .693-.346 1.386-1.04 1.849-.693.346-1.387.346-2.08 0l-12.251-7.05a5.957 5.957 0 0 0-5.895 0l-49.004 28.316c-1.849 1.04-3.005 3.005-3.005 5.085v56.516c0 2.08 1.156 4.046 3.005 5.086l49.004 28.316a5.957 5.957 0 0 0 5.895 0l49.004-28.316c1.849-1.04 3.005-3.005 3.005-5.086V21.844c0-2.196-1.156-4.16-3.005-5.201L345.572.347zm-4.507 143.776c0 .578-.231 1.04-.694 1.271l-16.758 9.708a1.714 1.714 0 0 1-1.503 0l-16.758-9.708c-.463-.231-.694-.809-.694-1.271v-19.417c0-.578.231-1.04.694-1.271l16.758-9.709a1.714 1.714 0 0 1 1.503 0l16.758 9.709c.463.23.694.809.694 1.271v19.417zM508.648 124.244c1.85-1.04 2.89-3.005 2.89-5.086v-13.753c0-2.08-1.156-4.045-2.89-5.085l-48.657-28.2a5.957 5.957 0 0 0-5.894 0l-49.004 28.315c-1.85 1.04-3.005 3.005-3.005 5.086v56.516c0 2.08 1.155 4.045 3.005 5.085l48.657 27.738c1.85 1.04 4.045 1.04 5.779 0L489 178.45c.925-.463 1.503-1.503 1.503-2.543 0-1.04-.578-2.08-1.503-2.543l-49.235-28.316c-.924-.577-1.502-1.502-1.502-2.542v-17.683c0-1.04.578-2.08 1.502-2.543l15.372-8.784a2.821 2.821 0 0 1 3.005 0l15.371 8.784c.925.578 1.503 1.502 1.503 2.543v13.869c0 1.04.578 2.08 1.502 2.542.925.578 2.08.578 3.005 0l29.125-16.99z" />
+								<path fill="#539E43"
+									d="M456.293 121.586a1.05 1.05 0 0 1 1.155 0l9.362 5.432c.347.23.578.577.578 1.04v10.864c0 .462-.231.809-.578 1.04l-9.362 5.432a1.05 1.05 0 0 1-1.155 0l-9.362-5.432c-.347-.231-.578-.578-.578-1.04v-10.864c0-.463.231-.81.578-1.04l9.362-5.432z" />
+								<g transform="translate(134.068 70.501)">
+									<mask id="c" fill="#fff">
+										<use xlink:href="#a" />
+									</mask>
+									<use fill="url(#b)" xlink:href="#a" />
+									<g mask="url(#c)">
+										<path
+											d="M51.893 1.85L3.121 29.933C1.27 30.974 0 32.94 0 35.02v56.286c0 1.387.578 2.658 1.502 3.698L56.285 1.156c-1.387-.231-3.005-.116-4.392.693zM56.632 125.053c.462-.116.925-.347 1.387-.578l48.773-28.085c1.85-1.04 3.005-3.005 3.005-5.085V35.019c0-1.502-.694-3.005-1.734-4.045l-51.43 94.079z" />
+										<path fill="url(#d)"
+											d="M106.676 29.934L57.788 1.85a8.025 8.025 0 0 0-1.503-.578L1.502 95.12a6.082 6.082 0 0 0 1.619 1.387l48.888 28.085c1.387.809 3.005 1.04 4.507.577l51.432-94.078c-.347-.462-.81-.81-1.272-1.156z" />
+									</g>
+									<g mask="url(#c)">
+										<path
+											d="M109.797 91.305V35.019c0-2.08-1.271-4.045-3.12-5.085L57.786 1.85a5.106 5.106 0 0 0-1.848-.693l53.511 91.42c.231-.347.347-.809.347-1.271zM3.12 29.934C1.272 30.974 0 32.94 0 35.02v56.286c0 2.08 1.387 4.045 3.12 5.085l48.889 28.085c1.156.693 2.427.925 3.814.693L3.467 29.818l-.346.116z" />
+										<path fill="url(#e)" fill-rule="evenodd"
+											d="M50.391.809l-.693.347h.924l-.231-.347z"
+											transform="translate(0 -9.246)" />
+										<path fill="url(#f)" fill-rule="evenodd"
+											d="M106.792 105.636c1.387-.809 2.427-2.196 2.89-3.698L56.053 10.402c-1.387-.231-2.89-.116-4.16.693L3.351 39.065l52.355 95.465a8.057 8.057 0 0 0 2.196-.693l48.889-28.2z"
+											transform="translate(0 -9.246)" />
+										<path fill="url(#g)" fill-rule="evenodd"
+											d="M111.3 104.712l-.347-.578v.809l.346-.231z"
+											transform="translate(0 -9.246)" />
+										<path fill="url(#h)" fill-rule="evenodd"
+											d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
+											transform="translate(0 -9.246)" />
+										<path fill="url(#i)" fill-rule="evenodd"
+											d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
+											transform="translate(0 -9.246)" />
+									</g>
+								</g>
+							</g>
+						</svg>
+
+					</div>
+
+					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+						<h3 class="text-white text-3xl font-semibold">Node.js</h3>
+
+						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+							<div class="badge">Backend</div>
+							<div class="badge">Backend development</div>
+						</div>
+
+						<p class="text-secondary">Node.js is an open-source, cross-platform, back-end JavaScript runtime
+							environment that runs on the V8 engine and
+							executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to
+							write command line tools and
+							for server-side scripting—running scripts server-side to produce dynamic web page content
+							before the page is sent to the
+							user's web browser.</p>
+					</div>
+
+				</div>
+			</div>
+	</div>
+
+	</section>
+	</div>
+
+
+	<!-- Hire me -->
+	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h2 id="contact" class="secondary-title">Contact me</h2>
+			<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
+
+			<div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+				<div class="space-y-12">
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Name</label>
+						<input class="w-full border border-input-border bg-input px-4 py-4">
+					</div>
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Email</label>
+						<input type="email" class="w-full border border-input-border bg-input px-4 py-4">
+					</div>
+					<div>
+						<label class="text-white block mb-6 text-xl font-bold">Message</label>
+						<textarea type="email"
+							class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
+					</div>
+					<button class="px-6 py-2 bg-theme text-white font-bold">Send it!</button>
+				</div>
+
+				<div class="mt-12">
+					<!-- Contact info -->
+					<p class="text-secondary">Cantact me by:</p>
+					<a href="mailto:vvmartirosyan@gmail.com"
+						class="text-secondary underline mt-3 block">vvmrtirosyan@gmail.com</a>
+
+					<!-- Socials -->
+					<div class="flex mt-20 space-x-6">
+						<!-- Skype -->
+						<a href="#">
+							<svg class="w-8 h-8 lg:w-12 lg:h-12" width="50" height="50" viewBox="0 0 50 50" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M43.1494 28.252C43.3496 27.1533 43.457 26.0303 43.457 24.9072C43.457 22.417 42.9688 20 42.0068 17.7295C41.0791 15.5322 39.7461 13.5596 38.0518 11.8652C36.3716 10.1808 34.3799 8.83914 32.1875 7.91504C29.9121 6.95313 27.5 6.46484 25.0098 6.46484C23.8379 6.46484 22.6611 6.57715 21.5186 6.79687C19.9376 5.9591 18.176 5.51995 16.3867 5.51758C13.4717 5.51758 10.7275 6.65527 8.66699 8.71582C7.65021 9.72738 6.84403 10.9305 6.29507 12.2555C5.74611 13.5806 5.46526 15.0013 5.46875 16.4355C5.46875 18.291 5.94727 20.1172 6.84082 21.7285C6.66016 22.7734 6.5625 23.8428 6.5625 24.9072C6.5625 27.3975 7.05078 29.8145 8.0127 32.085C8.94043 34.2822 10.2686 36.2549 11.9629 37.9492C13.6572 39.6436 15.6299 40.9717 17.8272 41.8994C20.1025 42.8613 22.5147 43.3496 25.0049 43.3496C26.0889 43.3496 27.1729 43.252 28.2373 43.0615C29.8731 43.9844 31.7188 44.4775 33.6084 44.4775C36.5234 44.4775 39.2676 43.3447 41.3281 41.2793C43.3936 39.2188 44.5264 36.4746 44.5264 33.5596C44.5313 31.7041 44.0527 29.873 43.1494 28.252ZM25.083 36.2061C18.5303 36.2061 15.6006 32.9834 15.6006 30.5713C15.6006 29.3311 16.5137 28.4668 17.7734 28.4668C20.5762 28.4668 19.8535 32.4951 25.083 32.4951C27.7637 32.4951 29.2432 31.04 29.2432 29.5508C29.2432 28.6572 28.8037 27.6611 27.0361 27.2266L21.2061 25.7715C16.5137 24.5947 15.6592 22.0557 15.6592 19.6729C15.6592 14.7217 20.3223 12.8613 24.7022 12.8613C28.7354 12.8613 33.4912 15.0928 33.4912 18.0615C33.4912 19.3359 32.3877 20.0732 31.1279 20.0732C28.7354 20.0732 29.1748 16.7627 24.3555 16.7627C21.9629 16.7627 20.6397 17.8467 20.6397 19.3945C20.6397 20.9424 22.5293 21.4355 24.1699 21.8115L28.4863 22.7686C33.2129 23.8232 34.4092 26.582 34.4092 29.1797C34.4092 33.1982 31.3184 36.2061 25.083 36.2061Z"
+									fill="white" />
+							</svg>
+						</a>
+						<!-- Twitter -->
+						<a href="#">
+							<svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z"
+									fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
