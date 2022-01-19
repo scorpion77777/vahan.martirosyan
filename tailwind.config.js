@@ -9,8 +9,8 @@ module.exports = {
         theme: "#3F3FFF",
         nav: "#404053",
         secondary: "#9191A4",
-        badge: "#3F3F51",
-        "input-border": "#565666",
+        badge: "#CCCCFF",
+        "input-border": "#ffffff",
         primary: "#2A2A35",
       },
       fontFamily: {
@@ -21,7 +21,7 @@ module.exports = {
   variants: {
     extend: {
       animation: {
-        bounce: "bounce 2s infinite",
+        ping: "ping 1s cubic-bezier(0, 0, 2,1) infinite ",
       },
     },
   },
