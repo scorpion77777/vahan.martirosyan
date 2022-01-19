@@ -19,11 +19,6 @@ function updateList() {
 
 //Mobile menu
 
-updateList();
-window.addEventListener("scroll", () => {
-  updateList();
-});
-
 // grab everything we need
 const btn = document.querySelector(".mobile-menu-button");
 const sidebar = document.querySelector(".sidebar");
