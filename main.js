@@ -17,7 +17,18 @@ function updateList() {
     );
 }
 
+//Mobile menu
+
 updateList();
 window.addEventListener("scroll", () => {
   updateList();
+});
+
+// grab everything we need
+const btn = document.querySelector(".mobile-menu-button");
+const sidebar = document.querySelector(".sidebar");
+
+// add our event listener for the click
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("-translate-x-full");
 });
