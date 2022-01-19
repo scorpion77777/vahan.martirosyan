@@ -16,3 +16,8 @@ function updateList() {
       "selected-circle"
     );
 }
+
+updateList();
+window.addEventListener("scroll", () => {
+  updateList();
+});
