@@ -8,7 +8,7 @@ module.exports = {
         "selected-text": "#A3A3FF",
         theme: "#3F3FFF",
         nav: "#404053",
-        secondary: "#9191A4",
+        secondary: "#ffffff",
         badge: "#CCCCFF",
         "input-border": "#ffffff",
         primary: "#2A2A35",
